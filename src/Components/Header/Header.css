@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.headerParentDiv {
+  width: 100%;
+  background-color: #eff1f3;
+  padding: 10px 16px;
+  z-index: 999;
+}
+
+.headerChildDiv {
+  display: flex; 
+  gap: 16px;
+  align-items: center;
+}
+
+.selectBox {
+  font-size: medium;
+  padding: 0.75rem 2rem;
+  width: 272px;
+  border: 2px solid black; 
+  border-radius: 5px;
+}
+
+.select {
+  position: relative;
+}
+
+.select>svg {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 50%;
+  left: 2%;
+  transform: translateY(-50%);
+}
+
+.selectBox {
+  font-size: medium;
+  padding: 0.75rem 2rem;
+  width: 272px;
+}
+
+.searchInput {
+  display: flex;
+  align-items: center;
+}
+
+.searchField {
+  padding: 0.8rem 10px;
+  font-size: medium;
+  width: 720px;
+  border: 2px solid black; 
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.btn {
+  width: 48px;
+  height: 48px;
+  background-color: #002f34;
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.btn>svg {
+  width: 24px;
+  height: 24px;
+  fill: white;
+}
+
+.language {
+  height: 48px;
+  display: flex;
+  align-items: center;
+}
+
+.language span {
+  /* justify-content: space-between;
+  align-items: center; */
+  font-size: 15px;
+  white-space: normal;
+  text-overflow: ellipsis;
+  font-weight: bolder;
+  margin-right: 5px;
+}
+
+.span {
+  text-decoration: none;
+  font-size: 16px;
+  white-space: normal;
+  text-overflow: ellipsis;
+  font-weight: bolder;
+  margin-right: 5px;
+}
+
+.loginPage hr {
+  margin: 0;
+  background-color: black;
+  height: 2px;
+}
+
+.loginPage a {
+  text-decoration: none;
+}
+
+.sellMenu {
+  position: relative;
+  cursor: pointer;
+}
+
+.sellMenu .all {
+  fill: white;
+}
+
+.sellMenu .top {
+  fill: #23e5db;
+}
+
+.sellMenu .left {
+  fill: #ffce32;
+}
+
+.sellMenu .right {
+  fill: #3a77ff;
+}
+
+.sellMenu .sellMenuContent {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #002f34;
+}
+
+.sellMenu .sellMenuContent span {
+  margin-left: 5px;
+}
+
+@media only screen and (max-width: 700px) {
+
+  .placeSearch,
+  .productSearch,
+  .sellMenu {
+    display: none;
+  }
+}
